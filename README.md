@@ -1,1 +1,1 @@
-[Feedboy](https://feedboy.github.io/rsschool-cv/cv)
+[Feedboy](https://feedboy.github.io/rsschool-cv/)
