@@ -1,10 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body></body>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ivanov Denis</title>
+  </head>
+  <body>
+    <div class="container-for-container">
+      <header>
+        <div class="container-left">
+          <img class="my-foto" src="myfoto.png" alt="My Foto" />
+          <h1>Ivanov Denis</h1>
+          <h2>Junior Frontend Developer</h2>
+          <nav class="section-navigation">
+            <h3 class="title-navigation">Navigation</h3>
+            <ul>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#infornation">Information</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#my-code">My Example</a></li>
+              <li><a href="#work-examples">Work Examples</a></li>
+              <li><a href="#education">Education</a></li>
+              <li><a href="#languages">Languages</a></li>
+            </ul>
+          </nav>
+          <section id="Contact" class="section-contact">
+            <h3 class="title-navigation">Contact</h3>
+            <ul>
+              <li>
+                <img
+                  src="fone.png"
+                  alt="fone-icon"
+                  width="30px"
+                  height="30px"
+                />+7(923)306-06-50
+              </li>
+              <li>
+                <img
+                  src="discord.png"
+                  alt="discord-icon"
+                  width="45px"
+                  height="30px"
+                />Denis ivanov(@feedboy)(#0856)
+              </li>
+              <li>
+                <img
+                  src="mail.png"
+                  alt="mail-icon"
+                  width="30px"
+                  height="30px"
+                />Ivanovdenis1905@gmail.com
+              </li>
+            </ul>
+          </section>
+          <section class="section-languages" id="languages">
+            <h3 class="title-navigation">Languages</h3>
+            <ul>
+              <li>
+                <ul>
+                  English
+                </ul>
+              </li>
+              <li>Confident user of Google Translate</li>
+              <ul>
+                Russian
+              </ul>
+              <li>Native</li>
+              <ul>
+                Deutsch
+              </ul>
+              <li>School program</li>
+            </ul>
+          </section>
+        </div>
+      </header>
+
+      <main>
+        <div class="container-right">
+          <div id="infornation" class="container-about">
+            <h2 class="about-title">About me</h2>
+            <p class="text-about">
+              IM 33 years old. Married and has a daughter. I live in Siberia.
+              One June evening, adjusting boots with a balalaika riding a bear,
+              fell to the ground and broke a bottle of vodka. Deciding that it
+              couldn't get any worse, I started learning web programming.
+            </p>
+            <p class="text-about">
+              But seriously, I wanted to get a sought-after modern profession.
+              My choice fell on WEB development.
+            </p>
+
+            цель, сильные стороны, опыт работы. основа
+          </div>
+          <div class="container-about" id="enducation">
+            <h2 class="about-title">Enducation</h2>
+            <ul class="abuot-list">
+              <li>
+                <p class="text-about">
+                  <b>Krasnoyarsk State Agrarian University</b>
+                </p>
+              </li>
+              <p class="text-about">Specialty: Economist manager</p>
+              <p class="text-about">End year: June 12, 2011</p>
+              <li>
+                <p class="text-about"><b>RS School</b></p>
+              </li>
+              <p class="text-about">JS/FE Pre-School 2022Q2</p>
+              <p class="text-about">End year: in the process</p>
+            </ul>
+          </div>
+          <div class="container-about" id="skills">
+            <ul class="abuot-list">
+              <li>Microsoft Excel</li>
+              <li>Microsoft Word</li>
+              <li>HTML:5</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <div class="container-about" id="my-code">
+            <pre><code>" &lt;!--since I have not written a single line of code yet, the example is taken from the Internet--&gt; function peak(arr) {
+
+            for (let i = 1; i < arr.length - 1; i++) {
+              let leftSum = arr.slice(0, i).reduce((accumulator, currentValue) => accumulator + currentValue);
+              let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) => accumulator + currentValue);
+          
+              if (leftSum === rightSum) return i;
+            }
+            return -1;
+          }"</code></pre>
+          </div>
+          <div class="container-about" id="#work-examples">
+            <p class="text-about">
+              At the moment I do not have finished works, but I will definitely
+              add them here as soon as they appear.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer class="footer">
+      <a href="https://github.com/feedboy">
+        <img src="gh.png" alt="gh-icon" width="100px" height="100px"
+      /></a>
+      <a href="https://rs.school/js/">
+        <img src="rs_school_js.svg" alt="rs-icon" width="100px" height="100px"
+      /></a>
+
+      подвал ссылка на гитхаб, год созжания приложения, логотип курса, ссылка на
+      курс.
+    </footer>
+  </body>
 </html>
