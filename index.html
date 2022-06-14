@@ -24,55 +24,61 @@
     <main>
       <aside class="container-left">
         <img class="my-foto" src="myfoto.png" alt="My Foto" />
-        <h1>Ivanov Denis</h1>
-        <h2>Junior Frontend Developer</h2>
+        <h1 class="name">Ivanov Denis</h1>
+        <h2 class="profession">Junior Frontend Developer</h2>
 
-        <section id="Contact" class="section-contact">
+        <section id="Contact" class="section-left">
           <h3 class="title-navigation">Contact</h3>
-          <ul>
-            <li>
+          <ul class="contact-list">
+            <li class="contact-row">
               <img
+                class="icon"
                 src="fone.png"
                 alt="fone-icon"
                 width="30px"
                 height="30px"
-              />+7(923)306-06-50
+              />
+              <p>+7(923)306-06-50</p>
             </li>
-            <li>
+            <li class="contact-row">
               <img
+                class="icon"
                 src="discord.png"
                 alt="discord-icon"
-                width="45px"
+                width="30px"
                 height="30px"
-              />Denis ivanov(@feedboy)(#0856)
+              />
+              <p>Denis ivanov(@feedboy)(#0856)</p>
             </li>
-            <li>
+            <li class="contact-row">
               <img
+                class="icon"
                 src="mail.png"
                 alt="mail-icon"
                 width="30px"
                 height="30px"
-              />Ivanovdenis1905@gmail.com
+              />
+              <p>Ivanovdenis1905@gmail.com</p>
             </li>
           </ul>
         </section>
         <section class="section-languages" id="languages">
           <h3 class="title-navigation">Languages</h3>
-          <ul>
-            <li>
-              <ul>
-                English
-              </ul>
+          <ul class="languages-ul">
+            <li class="languages-li">
+              English
+              <p>Confident user of Google Translate</p>
             </li>
-            <li>Confident user of Google Translate</li>
-            <ul>
+
+            <li class="languages-li">
               Russian
-            </ul>
-            <li>Native</li>
-            <ul>
+              <p>Native</p>
+            </li>
+
+            <li class="languages-li">
               Deutsch
-            </ul>
-            <li>School program</li>
+              <p>School program</p>
+            </li>
           </ul>
         </section>
       </aside>
@@ -89,8 +95,6 @@
             But seriously, I wanted to get a sought-after modern profession. My
             choice fell on WEB development.
           </p>
-
-          цель, сильные стороны, опыт работы. основа
         </div>
         <div class="container-about" id="enducation">
           <h2 class="about-title">Enducation</h2>
@@ -110,6 +114,7 @@
           </ul>
         </div>
         <div class="container-about" id="skills">
+          <h2 class="about-title">Skills</h2>
           <ul class="abuot-list">
             <li>Microsoft Excel</li>
             <li>Microsoft Word</li>
@@ -117,19 +122,24 @@
             <li>CSS</li>
           </ul>
         </div>
-        <div class="container-about" id="my-code">
-          <pre><code>" &lt;!--since I have not written a single line of code yet, the example is taken from the Internet--&gt; function peak(arr) {
+        <div class="container-my-code" id="my-code">
+          <h2 class="code-title">My Code</h2>
+          <pre><code>" &lt;!--since I have not written a single line of code yet, 
+            the example is taken from the Internet--&gt; function peak(arr) {
 
-            for (let i = 1; i < arr.length - 1; i++) {
-              let leftSum = arr.slice(0, i).reduce((accumulator, currentValue) => accumulator + currentValue);
-              let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) => accumulator + currentValue);
+ for (let i = 1; i < arr.length - 1; i++) {
+   let leftSum = arr.slice(0, i).reduce((accumulator, currentValue) =><br>
+   accumulator + currentValue);
+     let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) =><br>
+     accumulator + currentValue);
           
-              if (leftSum === rightSum) return i;
+          if (leftSum === rightSum) return i;
             }
             return -1;
           }"</code></pre>
         </div>
-        <div class="container-about" id="#work-examples">
+        <div class="container-about" id="work-examples">
+          <h2 class="about-title">Work Exaples</h2>
           <p class="text-about">
             At the moment I do not have finished works, but I will definitely
             add them here as soon as they appear.
@@ -139,15 +149,21 @@
     </main>
 
     <footer class="footer">
-      <a href="https://github.com/feedboy">
-        <img src="gh.png" alt="gh-icon" width="100px" height="100px"
-      /></a>
-      <a href="https://rs.school/js/">
-        <img src="rs_school_js.svg" alt="rs-icon" width="100px" height="100px"
-      /></a>
-
-      подвал ссылка на гитхаб, год созжания приложения, логотип курса, ссылка на
-      курс.
+      <div class="container-gh">
+        <a href="https://github.com/feedboy">
+          <img src="gh.png" alt="gh-icon" width="100px" height="100px"
+        /></a>
+      </div>
+      <git class="container-data">2022</git>
+      <div class="container-rs-school">
+        <a href="https://rs.school/js/">
+          <img
+            src="rs_school_js.svg"
+            alt="rs-icon"
+            width="200px"
+            height="100px"
+        /></a>
+      </div>
     </footer>
   </body>
 </html>
